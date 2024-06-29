@@ -59,7 +59,7 @@ const Footer = () => {
               <div className=" mt-2 flex flex-col gap-2">
                 {Resources.map((item, index) => {
                   return (
-                    <div className=" cursor-pointer text-sm transition-all duration-200 hover:text-richblack-50">
+                    <div key={index} className=" cursor-pointer text-sm transition-all duration-200 hover:text-richblack-50">
                       <Link to={item.split(" ").join("-")}>{item}</Link>
                     </div>
                   );
