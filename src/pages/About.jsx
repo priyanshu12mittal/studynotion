@@ -16,8 +16,6 @@ const About = () => {
       {/* section 1 */}
 
       <section className="flex flex-col items-center gap-8 bg-richblack-800 pt-14">
-        <h1 className="text-base text-richblack-200 ">About us</h1>
-
         <div className="flex w-3/5 flex-col items-center gap-4 px-14 ">
           <p className="text-center text-4xl font-semibold leading-[2.75rem]">
             Driving Innovation in Online Education for a{" "}

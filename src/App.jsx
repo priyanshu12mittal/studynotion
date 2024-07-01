@@ -8,6 +8,7 @@ import ForgotPassword from './pages/ForgotPassword'
 import UpdatePassword from './pages/UpdatePassword'
 import VerifyEmail from './pages/VerifyEmail'
 import About from './pages/About'
+import ContactUs from './pages/ContactUs'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
     <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/about' element={<About />} />
+      <Route path='/contact' element={<ContactUs />}/>
       <Route path='/login' element={<Login />} />
       <Route path='/signup' element={<Signup />} />
       <Route path='/forgot-password' element={<ForgotPassword />} />
