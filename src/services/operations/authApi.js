@@ -165,6 +165,7 @@ export function signUp(
 }
 
 export function Logout(navigate){
+  console.log("called")
   return (dispatch)=>{
     dispatch(setToken(null))
     dispatch(setUser(null))
