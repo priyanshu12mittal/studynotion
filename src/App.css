@@ -1,7 +1,15 @@
-html,body{
-    overflow-x: hidden;
+html,
+body {
+  overflow-x: hidden;
 }
 
-.homepage_bg{
-    background: url("../src/assets/Images/bghome.svg");
+.homepage_bg {
+  background: url("../src/assets/Images/bghome.svg");
+}
+.inputStyle {
+  @apply rounded-lg bg-richblack-700 p-3 text-[16px] leading-[24px] text-richblack-5 shadow-[0_1px_0_0] shadow-white/50 placeholder:text-richblack-400 focus:outline-none;
+}
+
+.labelStyle {
+  @apply text-[14px] text-richblack-5;
 }
