@@ -2,6 +2,7 @@ import React, { useCallback, useEffect, useState } from "react";
 import { useDropzone } from "react-dropzone";
 import { VscCloudUpload } from "react-icons/vsc";
 import { Player } from "video-react";
+import 'video-react/dist/video-react.css';
 
 const UploadContent = ({
   name,

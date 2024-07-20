@@ -20,6 +20,9 @@ import { ACCOUNT_TYPE } from "./utils/constants";
 import {OpenRoute} from "./components/core/auth/OpenRoute";
 import AddCourse from "./components/core/dashboard/AddCourse";
 import MyCourses from "./components/core/dashboard/MyCourses";
+import Catalog from "./pages/Catalog";
+import CourseDetails from './pages/CourseDetails'
+import ViewCourse from "./pages/ViewCourse";
 
 function App() {
   const { user } = useSelector((state) => state.profile);
@@ -31,6 +34,18 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/catalog/:categoryName" element={<Catalog />}></Route>
+        <Route
+          path="/courses/:courseId"
+          element={
+            <CourseDetails
+              isStudent={user?.accountType === ACCOUNT_TYPE.STUDENT}
+            />
+          }
+        ></Route>
+        {user?.accountType === ACCOUNT_TYPE.STUDENT && (
+          <Route path="/view-course/:courseId" element={<ViewCourse />}></Route>
+        )}
         <Route
           element={
             <PrivateRoute>
